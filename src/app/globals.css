@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: #fff;
+  --background-start-rgb: 250, 249, 246;
+  --background-end-rgb: 250, 249, 246;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 250, 249, 246;
+    --background-end-rgb: 250, 249, 246;
   }
 }
 
@@ -24,4 +24,40 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+navbar ul {
+  border: 1px solid #e7e7e7;
+  background-color: var(--background-start-rgb);
+}
+
+navbar li a {
+  color: #666;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
